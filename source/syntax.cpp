@@ -66,7 +66,7 @@ else return 0.0; }
 bool isFloat(const char *s)
 {
 	bool pointFlag = false, expFlag = false;
-	unsigned int  last = strlen(s) - 1;
+	size_t last = strlen(s) - 1;
 	unsigned int  i;
 
 	for (i=0; i < strlen(s); i++) {
@@ -301,7 +301,7 @@ void TokenString::parse(const char *fname, const char *extra1, const char *extra
 				else if ( ::equal(token,"include") ) {  //*** Import data file
 					if ( (ptr0 = ptr1) >= last ) break;
 					getToken(ptr0,ptr1,last, exprFlag);
-					char *input_file = ::StrCpy(ptr0,ptr1-ptr0);
+					char *input_file = ::StrCpy(ptr0, ptr1-ptr0);
 					char *filename = get_string(input_file);
 					parse(filename, 0, 0, argc, argv);
 					delete [] input_file; delete [] filename;
@@ -416,7 +416,7 @@ void TokenString::getToken(char *&ptr0, char *&ptr1, char *last, bool expression
 
 void TokenString::addToken(const char *token, int line, int script)
 {
-	int tlength = strlen(token);
+	size_t tlength = strlen(token);
 	if (tlength == 0) return;
 
 	if (length + tlength + 2 >= MAX_STORAGE_LENGTH)
