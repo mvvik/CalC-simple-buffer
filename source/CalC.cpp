@@ -69,7 +69,7 @@ char    LABEL_DIM3[4];
 
 PlotArray* GluPlotArray = NULL;
 char*      globalLabelX = NULL;
-char*      versionStr = StrCpy("6.10.2");
+char*      versionStr = StrCpy("6.10.4");
 char       scriptFileName[1024];
 
 #define EXTRA_PARAM_STRING  "; pA=5.182134 ; pi=4 atan(1) ; "
@@ -102,7 +102,7 @@ void getRun( TokenString &TS, int i, bool *adaptive, double *time=0,
 void header() {
      fprintf(stderr,"\n******************************************************************");
      fprintf(stderr,"\n*                                                                *");
-     fprintf(stderr,"\n*  Calcium Calculator (CalC)  *  version 6.10.2  *  Oct 14, 2022 *");
+     fprintf(stderr,"\n*  Calcium Calculator (CalC)  *  version 6.10.4  *  Nov 15, 2022 *");
      fprintf(stderr,"\n*                                                                *");
      fprintf(stderr,"\n*                Victor Matveev (C) 2001-2022                    *");
 	 fprintf(stderr,"\n*   CalC is distributed under GPLv3: see attached license file   *");
