@@ -105,9 +105,9 @@ void header() {
      fprintf(stderr,"\n*  Calcium Calculator (CalC)  *  version 6.10.5  *  Jan 15, 2023 *");
      fprintf(stderr,"\n*                                                                *");
      fprintf(stderr,"\n*                Victor Matveev (C) 2001-2023                    *");
-	 fprintf(stderr,"\n*   CalC is distributed under GPLv3: see attached license file   *");
+	   fprintf(stderr,"\n*   CalC is distributed under GPLv3: see attached license file   *");
      fprintf(stderr,"\n*                                                                *");
-	 fprintf(stderr,"\n*  Dept of Math Sciences, New Jersey Institute of Technology     *");
+	   fprintf(stderr,"\n*  Dept of Math Sciences, New Jersey Institute of Technology     *");
      fprintf(stderr,"\n*                     and LBM, NIDDK, NIH                        *");
      fprintf(stderr,"\n*                                                                *");
      fprintf(stderr,"\n*  Supported in part by NSF DMS0417416, DMS0817703, DMS517085    *");
@@ -126,29 +126,28 @@ void header() {
  char fname[1024];
 
  try {
-
-   if (argc < 2) {
-       FILE* f;
-       if (f = fopen("DefaultScript.txt", "r")) {
-           fclose(f);
-           strcpy(scriptFileName, "DefaultScript.txt");
-       } 
-       else {
-           header();
-           fprintf(stderr, "\n\n Enter the CalC script file name: ");
-           fflush(stderr);
-           scanf("%s", fname);
-           size_t i = strlen(argv[0]);
-           while (argv[0][i] != '/' && argv[0][i] != '\\' && i > 0) i--;
-           strncpy(scriptFileName, argv[0], i + 1);
-           scriptFileName[i + 1] = 0;
-           fprintf(stderr, "\n Full path = %s \n", scriptFileName);
-           strcat(scriptFileName, fname);
-           fprintf(stderr, " File name = %s \n\n", scriptFileName);
-       }
+       
+	 if (argc > 1) strcpy(scriptFileName, argv[1]);
+	 else {
+		 FILE* f = fopen("DefaultScript.txt", "r");
+		 if (f) {
+			 fclose(f);
+			 strcpy(scriptFileName, "DefaultScript.txt");
+		 } else {
+			 header();
+			 fprintf(stderr, "\n\n Enter the CalC script file name: ");
+			 fflush(stderr);
+			 scanf("%s", fname);
+			 size_t i = strlen(argv[0]);
+			 while (argv[0][i] != '/' && argv[0][i] != '\\' && i > 0) i--;
+			 strncpy(scriptFileName, argv[0], i + 1);
+			 scriptFileName[i + 1] = 0;
+			 fprintf(stderr, "\n Full path = %s \n", scriptFileName);
+			 strcat(scriptFileName, fname);
+			 fprintf(stderr, " File name = %s \n\n", scriptFileName);
+		 }
    }
-   else strcpy(scriptFileName, argv[1]);
-
+   
    TokenString *TS;
    TS = new TokenString(scriptFileName, EXTRA_PARAM_STRING, "", argc, argv);
    TS->get_int_param("verbose", &VERBOSE);
