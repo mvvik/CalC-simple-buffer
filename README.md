@@ -95,7 +95,7 @@ Like any system program, **CalC** can be launched from **MATLAB** (Mathworks, In
 
     system('.\calc ScriptFileName')
     
-You can then collect the data by reading the **mute plot** or **binary** files (see above about data output). See CalC demo script web page for further details.
+You can then collect the data by reading the **mute plot** or **binary** files (see above about data output). See [CalC demo script repository](http://web.njit.edu/~matveev/calc/scripts.html) for further details.
 
 ******************************************************************************
 ### Documentation
