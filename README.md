@@ -3,6 +3,8 @@
 - Developed by [Victor Matveev](http://www.victormatveev.org), Department of Mathematical Sciences, NJIT
 - Initial development (2001-2003): Laboratory of Biological Modeling, NIDDK, NIH
 - Email any bug reports (make sure to include your script) to: matveev@njit.edu
+- Manual available at [this URL](https://web.njit.edu/~matveev/calc/manual.html)
+- Demo and other script (in lieu of tutorial) avaialble [here](https://web.njit.edu/~matveev/calc/scripts.html)
 - Mirror maintained at http://www.calciumcalculator.org
 ******************************************************************************
 CalC ("Calcium Calculator") is a modeling tool for simulating intracellular calcium diffusion and buffering. CalC solves continuous reaction-diffusion PDEs describing the entry of calcium into a volume through point-like channels, and its diffusion, buffering and binding to calcium receptors. CalC uses a variation of the Alternating Direction Implicit (ADI) finite difference method, which is quite CPU-time efficient, and accurate to 2nd order in time and space. Time-step is varied adaptively during the simulation. Other main features are:
@@ -14,10 +16,9 @@ CalC ("Calcium Calculator") is a modeling tool for simulating intracellular calc
 - CalC scripts can integate ordinary differential equations as well, e.g. to model calcium dependent exocytosis.
 - CalC results can be viewed in real time using **xmgrace** or **freeglut** libraries (see below)
 
-
 If you use CalC in your published work, please cite [2002 Biophys J article](https://pubmed.ncbi.nlm.nih.gov/12202362/) article, and please send me a reference for inclusion in the [CalC publication list](https://web.njit.edu/~matveev/calc/calc_pub.html) upon publication. CalC is provided on an as-is basis, but I will respond to any bug reports or technical questions.
 ******************************************************************************
-#### License
+### License
 CalC is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 CalC is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
