@@ -34,8 +34,6 @@ Executables for the latest versions of **Windows** and **macOS** are contained i
 ******************************************************************************
 ### Compilation
 
-NOTE: you can find all platform-specific definitions in the short header file called **PlatformSpecific.h**, contained within the source folder.
-
 ##### 1) Windows:   
 
 Use MSDN Visual Studio to compile the code. The Visual Studio "Project" file **CalC.vcxproj** contains all the necessary dependencies (it resides within the source folder). Alternatively, you can install the Linux emulator [cygwin](http://www.cygwin.com") on your Windows machine, and follow the UNIX installation instructions below. 
@@ -69,9 +67,9 @@ In order to monitor program output and error messages, include the statement **v
 ### Data Output
 
 ##### File plots (all platforms): 
-Simulation results can be saved to files in real time using [mute plot](http://web.njit.edu/~matveev/calc/manual.html#method_mute) statements, ASCII or binary files are produced that are readable by any graphics-capable language such as MATLAB (Mathworks, Inc). See [demo scripts](https://web.njit.edu/~matveev/calc/scripts.html) and refer to the [manual](http://web.njit.edu/~matveev/calc/manual.html#method_mute) for details.
+Simulation results can be saved to files in real time using [mute plot](http://web.njit.edu/~matveev/calc/manual.html#method_mute) statements, ASCII files are produced that are readable by any graphics-capable language such as MATLAB (Mathworks, Inc). See [demo scripts](https://web.njit.edu/~matveev/calc/demoScripts.html) and refer to the [manual](http://web.njit.edu/~matveev/calc/manual.html#method_mute) for details.
 
-The [binary](http://web.njit.edu/~matveev/calc/manual.html#binary) plot type allows to save an entire concentration field at several time points during the simulation, and can be read and displayed using MATLAB via scripts provided in the **examples** directory and on the [demo script page](https://web.njit.edu/~matveev/calc/scripts.html)
+The [binary](http://web.njit.edu/~matveev/calc/manual.html#binary) plot type allows to save an entire concentration field at several time points during the simulation, and can be read and displayed using MATLAB via scripts provided in the **examples** directory and on the [demo script page](https://web.njit.edu/~matveev/calc/demoScripts.html)
 
 #####  Real-time OpenGL plots:
 
