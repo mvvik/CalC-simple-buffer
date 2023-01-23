@@ -1,7 +1,10 @@
 ******************************************************************************
 ## README: Calcium Calculator (CalC)
-[<img src="https://web.njit.edu/~matveev/images/Demo_Menu_Button.jpg" width="100" height="20" />Demo Scripts<//img/>)](https://web.njit.edu/~matveev/calc/demoScripts.html)
-
+[<img src="https://web.njit.edu/~matveev/images/Demo_Menu_Button.jpg" width="120" height="20" />](https://web.njit.edu/~matveev/calc/demoScripts.html)
+[<img src="https://web.njit.edu/~matveev/images/Scripts_Menu_Button.jpg" width="120" height="20" />](https://web.njit.edu/~matveev/calc/scripts.html)
+[<img src="https://web.njit.edu/~matveev/images/Manual_Menu_Button.jpg" width="120" height="20" />](https://web.njit.edu/~matveev/calc/manual.html)
+[<img src="https://web.njit.edu/~matveev/images/Publications_Menu_Button.jpg" width="120" height="20" />](https://web.njit.edu/~matveev/calc/calc_pubs.html)
+[<img src="https://web.njit.edu/~matveev/images/CalC_Menu_Button.jpg" width="120" height="20" />](https://web.njit.edu/~matveev/calc.html)
 - Developed by [Victor Matveev](http://www.victormatveev.org), Department of Mathematical Sciences, NJIT
 - Initial development (2001-2003): Laboratory of Biological Modeling, NIDDK, NIH
 - Email any bug reports (make sure to include your script) to: matveev@njit.edu
