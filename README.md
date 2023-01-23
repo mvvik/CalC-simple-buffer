@@ -1,5 +1,7 @@
 ******************************************************************************
 ## README: Calcium Calculator (CalC)
+![[Demo Scripts](https://web.njit.edu/~matveev/calc/desmoScripts.html)](https://web.njit.edu/~matveev/images/Demo_Menu_Button.jpg)
+
 - Developed by [Victor Matveev](http://www.victormatveev.org), Department of Mathematical Sciences, NJIT
 - Initial development (2001-2003): Laboratory of Biological Modeling, NIDDK, NIH
 - Email any bug reports (make sure to include your script) to: matveev@njit.edu
