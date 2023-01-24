@@ -1,4 +1,4 @@
-## README: Calcium Calculator (CalC)
+## Calcium Calculator (CalC), Simple-Buffer Versions 6.X.X.
 [<img src="https://web.njit.edu/~matveev/images/Demo_Menu_Button.jpg" height="20" />](https://web.njit.edu/~matveev/calc/demoScripts.html)
 [<img src="https://web.njit.edu/~matveev/images/Scripts_Menu_Button.jpg" height="20" />](https://web.njit.edu/~matveev/calc/scripts.html)
 [<img src="https://web.njit.edu/~matveev/images/Manual_Menu_Button.jpg" height="19" />](https://web.njit.edu/~matveev/calc/manual.html)
