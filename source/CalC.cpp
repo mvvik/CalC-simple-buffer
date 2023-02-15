@@ -69,7 +69,7 @@ char    LABEL_DIM3[4];
 
 PlotArray* GluPlotArray = NULL;
 char*      globalLabelX = NULL;
-char*      versionStr = StrCpy("6.10.5");
+char*      versionStr = StrCpy("6.10.6");
 char       scriptFileName[1024];
 
 #define EXTRA_PARAM_STRING  "; pA=5.182134 ; pi=4 atan(1) ; "
@@ -102,12 +102,12 @@ void getRun( TokenString &TS, int i, bool *adaptive, double *time=0,
 void header() {
      fprintf(stderr,"\n******************************************************************");
      fprintf(stderr,"\n*                                                                *");
-     fprintf(stderr,"\n*  Calcium Calculator (CalC)  *  version 6.10.5  *  Jan 15, 2023 *");
+     fprintf(stderr,"\n*  Calcium Calculator (CalC)  *  version 6.10.6  *  Feb 15, 2023 *");
      fprintf(stderr,"\n*                                                                *");
      fprintf(stderr,"\n*                Victor Matveev (C) 2001-2023                    *");
-	   fprintf(stderr,"\n*   CalC is distributed under GPLv3: see attached license file   *");
+	 fprintf(stderr,"\n*   CalC is distributed under GPLv3: see attached license file   *");
      fprintf(stderr,"\n*                                                                *");
-	   fprintf(stderr,"\n*  Dept of Math Sciences, New Jersey Institute of Technology     *");
+	 fprintf(stderr,"\n*  Dept of Math Sciences, New Jersey Institute of Technology     *");
      fprintf(stderr,"\n*                     and LBM, NIDDK, NIH                        *");
      fprintf(stderr,"\n*                                                                *");
      fprintf(stderr,"\n*  Supported in part by NSF DMS0417416, DMS0817703, DMS517085    *");
@@ -122,7 +122,6 @@ void header() {
 
  int main(int argc, char **argv) {
 
-
  char fname[1024];
 
  try {
@@ -135,7 +134,7 @@ void header() {
 			 strcpy(scriptFileName, "DefaultScript.txt");
 		 } else {
 			 header();
-			 fprintf(stderr, "\n\n Enter the CalC script file name: ");
+             fprintf(stderr, "\n\n Enter the CalC script file name: ");
 			 fflush(stderr);
 			 scanf("%s", fname);
 			 size_t i = strlen(argv[0]);
