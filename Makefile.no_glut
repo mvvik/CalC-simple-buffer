@@ -1,4 +1,4 @@
-#
+#  Use this version of Makefile if you don't have freeglut installed
 #  REMOVE FILE NAME EXTENSION ".no_glut" BEFORE USING MAKE
 #
 # ************************************************************************
