@@ -95,7 +95,7 @@ class BCarrayObj {
 
  public:
   
-   double  *bc_deriv, *bc_lin, *bc_coef, *bc_pump, *bc_pow, *bc_Kn, *bc_const;
+   double  *bc_deriv, *bc_lin, *bc_coef, *bc_pump, *bc_pow, *bc_Kn, * bc_pump2, * bc_pow2, * bc_Kn2, *bc_const;
    char    **bc_id;
    int     bc_type_num;
    int     bc_type_count;
@@ -105,7 +105,9 @@ class BCarrayObj {
 
    void  set_bc_types(TokenString &params);
    void  set_bc_types(int n);
-   void  set_bc_type(double a, double b, double c, double p, double k, double d, double Ca0, double CaD, const char *id = "");
+   void  set_bc_type(double a, double b, double c, double p, double k, double d, double Ca0, double CaD, const char* id = "");
+   void  set_bc_type(double a, double b, double c, double p, double k, double c2, double p2, double k2, double d, double Ca0, double CaD, const char* id = "");
+   
    int   bcidtoint(const char *);
    void  kill_bc();
 
