@@ -1,7 +1,7 @@
 /************************************************************************
  *
  *                   Calcium Calculator (CalC)
- *            Copyright (C) 2001-2022 Victor Matveev
+ *            Copyright (C) 2001-2025 Victor Matveev
  *                    LBM/NIDDK/NIH and DMS/NJIT
  *
  *              Calcium Calculator.cpp / calc.cpp
@@ -69,7 +69,7 @@ char    LABEL_DIM3[4];
 
 PlotArray* GluPlotArray = NULL;
 char*      globalLabelX = NULL;
-char*      versionStr = StrCpy("6.10.7");
+char*      versionStr = StrCpy("6.10.9");
 char       scriptFileName[1024];
 
 #define EXTRA_PARAM_STRING  "; pA=5.182134 ; pi=4 atan(1) ; "
@@ -102,17 +102,17 @@ void getRun( TokenString &TS, int i, bool *adaptive, double *time=0,
 void header() {
      fprintf(stderr,"\n******************************************************************");
      fprintf(stderr,"\n*                                                                *");
-     fprintf(stderr,"\n*  Calcium Calculator (CalC)  *  version 6.10.7  *  Apr 5, 2023  *");
+     fprintf(stderr,"\n*  Calcium Calculator (CalC)  *  version 6.10.9  *  Aug 31, 2025 *");
      fprintf(stderr,"\n*                                                                *");
-     fprintf(stderr,"\n*                 Victor Matveev, 2001-2023                      *");
-     fprintf(stderr,"\n*   CalC is distributed under GPLv3: see attached license file   *");
-     fprintf(stderr,"\n*                                                                *"); 
-     fprintf(stderr,"\n*  Dept of Math Sciences, New Jersey Institute of Technology     *");
+     fprintf(stderr,"\n*                  Victor Matveev, 2001-2025                     *");
+	 fprintf(stderr,"\n*   CalC is distributed under GPLv3: see attached license file   *");
+     fprintf(stderr,"\n*                                                                *");
+	 fprintf(stderr,"\n*  Dept of Math Sciences, New Jersey Institute of Technology     *");
      fprintf(stderr,"\n*                     and LBM, NIDDK, NIH                        *");
      fprintf(stderr,"\n*                                                                *");
      fprintf(stderr,"\n*  Supported in part by NSF DMS0417416, DMS0817703, DMS1517085   *");
      fprintf(stderr,"\n*                                                                *");
-     fprintf(stderr,"\n****************************************************************\n");
+     fprintf(stderr,"\n******************************************************************\n");
 }
 
  //**************************************************************************************************

@@ -98,12 +98,12 @@ extern char LABEL_DIM3[4];
 #define IF_TOKEN    "if"
 #define THEN_TOKEN  "then"
 #define ELSE_TOKEN  "else"
-#define ENDIF_TOKEN "endif"
+#define ENDIF_TOKEN "end"
 
-#define ALIAS_NUM 15     /* aliases */
+#define ALIAS_NUM 16     /* aliases */
 
 const char aliasArray[2*ALIAS_NUM][18] =  // in each alias pair, the first element is the obsolete token 
-  { "&&", "and",   "||", "or",   "Adaptive", "adaptive",   "input", "include",   "bc_type", "bc.define",
+  { "&&", "and",   "||", "or",   "Adaptive", "adaptive",   "input", "include",   "bc_type", "bc.define", "endif", "end",
     "point.mute", "mute",  "peak", "max", "run", "Run", "ln(", "log(",  "Neumann", "Noflux", "4D", "binary",
     "plot.point.steps", "plot.steps.point",  "plot.1D.steps", "plot.steps.1D", "sphere", "volume", "sobstacle", "obstacle" };
 
@@ -219,14 +219,14 @@ inline bool isExpressionStart(char *s) {  // to signal the parser that the minus
 
 inline bool isExpressionStop(char *s) {
   if (equal(s,CARR_RET_TOKEN) || equal(s,"to") || equal(s,"step") || equal(s, "then" )  || equal(s,"else") || 
-      equal(s,"endif") || equal(s, "," ) ) 
+      equal(s, ENDIF_TOKEN) || equal(s, "," ) ) 
   return true; else return false;}
 
 inline bool isLineStart(char *s) {
   if (equal(s,CARR_RET_TOKEN) || equal(s,"then") || equal(s,"else") ) return true; else return false;}
 
 inline bool isLineEnd(char *s) {
-  if (equal(s,CARR_RET_TOKEN) || equal(s,"else") || equal(s,"endif") ) return true; else return false;}
+  if (equal(s,CARR_RET_TOKEN) || equal(s,"else") || equal(s, ENDIF_TOKEN) ) return true; else return false;}
 
 
 //***************************************************************************

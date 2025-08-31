@@ -291,8 +291,8 @@ void TokenString::parse(const char *fname, const char *extra1, const char *extra
 				}
 
 				else if ( ::equal(token, ENDIF_TOKEN) ) {
-					if ( ifLevel < 0 ) throw ::StrCpy("\"endif\" without an \"if\" ");
-					else if ( !reachedThen[ifLevel] ) throw ::StrCpy("\"endif\" without a \"then\" ");
+					if ( ifLevel < 0 ) throw ::StrCpy("\"end\" without an \"if\" ");
+					else if ( !reachedThen[ifLevel] ) throw ::StrCpy("\"end\" without a \"then\" ");
 					else ifLevel--;
 					if ( (ptr0 = ptr1) >= last ) break;  //*** remove "endif" from token array: it might cause a syntax error 
 					else continue;
